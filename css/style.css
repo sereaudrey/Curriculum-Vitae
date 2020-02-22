@@ -1,0 +1,16 @@
+h2 {
+
+    color:rgb(0, 195, 255);
+
+}
+
+ul{
+    color:blueviolet;
+}
+
+/*
+Commentaire qui n'apparait pas 
+*/
+#avatar {
+    border-radius:50%;
+}
