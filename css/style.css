@@ -1,16 +1,57 @@
 h2 {
 
-    color:rgb(0, 195, 255);
-
+    color:rgb(115, 124, 128);
+    font-family: "Trebuchet MS", Verdana, "Times New Roman";
 }
 
 ul{
-    color:blueviolet;
+    color:black;
+    font-family: "Times New Roman", Verdana;
+    list-style-position: inside;
 }
 
 /*
 Commentaire qui n'apparait pas 
 */
 #avatar {
-    border-radius:50%;
+    border-radius :50%;
 }
+
+h1 {
+    font-family: "Trebuchet MS", verdana, "Times New Roman";
+    text-align: center;
+    
+}
+
+strong {
+    font-style: italic;
+}
+
+h2, li {
+    text-align: center;
+}
+
+section
+{
+    background-color: rgb(112, 134, 209); 
+    border-radius: 10px;
+    border: 3px solid grey;
+}
+
+#conteneur
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    height: 800px;
+    align-items: baseline;
+    float: left;
+    background-color: rgb(187, 201, 217);
+    font-family: "Trebuchet MS", verdana, "Times New Roman";
+    border : 3px solid grey ;
+    border-radius: 10px;
+    width: 350px ;
+    padding: 12px;
+}
+
