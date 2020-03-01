@@ -1,7 +1,13 @@
+body {
+    margin: 0;
+}
+
+
 h2 {
 
-    color:rgb(115, 124, 128);
+    color: black;
     font-family: "Trebuchet MS", Verdana, "Times New Roman";
+    font-size: 2rem;
 }
 
 ul{
@@ -19,7 +25,7 @@ Commentaire qui n'apparait pas
 
 h1 {
     font-family: "Trebuchet MS", verdana, "Times New Roman";
-    text-align: center;
+    font-size: 5rem;
     
 }
 
@@ -27,31 +33,110 @@ strong {
     font-style: italic;
 }
 
-h2, li {
-    text-align: center;
+header{
+    text-align: left;
 }
 
-section
-{
-    background-color: rgb(112, 134, 209); 
-    border-radius: 10px;
-    border: 3px solid grey;
-}
-
-#conteneur
+#left-panel
 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: baseline;
-    height: 800px;
+    height: 100%;
     align-items: baseline;
-    float: left;
     background-color: rgb(187, 201, 217);
     font-family: "Trebuchet MS", verdana, "Times New Roman";
-    border : 3px solid grey ;
-    border-radius: 10px;
-    width: 350px ;
+    width: 30% ;
     padding: 12px;
+    padding-top: 5rem;
 }
 
+#loisirs{
+    color: rgb(75, 75, 75)
+}
+.catégories
+{
+    color : rgb(187, 201, 217);
+    background-color: rgb(75, 75, 75);
+    text-align: center;
+    width: 100%;
+}
+
+#right-panel
+{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding-top: 5rem;
+    padding-left: 2rem;
+}
+
+.container
+{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.body 
+{
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 1rem;
+}
+
+.icone
+{
+width: 10%
+}
+
+.date
+{
+    width: 30%;
+}
+.far, .fas
+{
+    color: rgb(187, 201, 217)
+}
+
+.name1
+{
+    display: block;
+    flex-direction: column;
+    width: 50%;
+    float: left;
+}
+
+.name2
+{
+   display: flex;
+   flex-direction: column; 
+   width: 50%;
+   float: right
+}
+
+.Audrey{
+    color: rgb(187, 201, 217)
+}
+
+hr{
+    margin: 2%;
+    height: 2px;
+    margin-left: 0%;
+    margin-top: 0%;
+    width: 80%;
+    background-color:rgb(187, 201, 217);
+    border: none;
+}
+
+@media screen and (max-width: 768px)
+{
+    #left-panel, #right-panel 
+    {
+        width: 100%;
+    }
+    .container
+    {
+        flex-wrap: wrap;
+    }
+}

@@ -4,8 +4,12 @@
        
         <!-- En-tête de la page -->
             <meta charset="utf-8" />
+
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
             
             <link rel="stylesheet" href="css/style.css" />
+
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
 
             <title>Séré Audrey</title>
         
@@ -13,62 +17,88 @@
     
     <body>
         <!-- corps de la page-->
-    
-        <section> 
-           <a href="images/moi.jpg"><img id="avatar" src="images/moi_mini.jpg" alt="photo de moi" title="Cliquez pour agrandir"/></a>
-           <h1> Audrey Séré </h1> <br/> <h1>Web développeur Freelance</h1>
-       </section>
+        <div class="container"> 
 
-       <div id="conteneur">
+            <div id="left-panel">
+                <a class= "photo" href="images/moi.jpg"><img id="avatar" src="images/moi_mini.jpg" alt="photo de moi" title="Cliquez pour agrandir"/></a>
+                <div > <h2 class="catégories"> CONTACT</h2></div>
+                <p> Nom : Séré <br/> Prénom : Audrey <br/> Adresse : 12 Rue de Paris 75000 Paris <br/> Email : audrey123@hotmail.com <br/> 
+                    Date de naissance : 11/11/1996 <br/> Téléphone : 0612345678 <br/> Permis B + Véhiculée 
+                </p>
 
-        <div class="Coordonnées"> <h2> Coordonnées</h2></div>
-            <p> Nom : Séré <br/> Prénom : Audrey <br/> Adresse : 12 Rue de Paris 75000 Paris <br/> Email : audrey123@hotmail.com <br/> 
-                Date de naissance : 11/11/1996 <br/> Téléphone : 0612345678 <br/> Permis B + Véhiculée 
-            </p>
+                <div ><h2 class="catégories">A PROPOS DE MOI</h2></div>
+                <p> 
+                    Que dire ...? J'ai fais pas mal de réorientation, marketing, psychologie et maintenant développement. 
+                    Jusqu'ici j'ai trouvé intéressant tout ce que j'ai pu étudier et j'espère vraiment pouvoir réussir dans cette formation 
+                    qui me plaît de plus en plus au vu de toutes les possibilités que l'on a !
 
-        <div class="Loisirs et centres d'intérêts"><h2>Loisirs et centres d'intérêts</h2></div>
-            <p> Lecture / Cinéma / Animaux / Jeux Vidéos 
-            </p>
+                </p>
+        
+                <div ><h2 class="catégories">LOISIRS</h2></div>
+                <div id="loisirs">
+                    <i class="fas fa-book-open"></i>
+                    <i class="fas fa-film"></i>
+                    <i class="fas fa-paw"></i>
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                
+        
+            </div>
 
-        <div class="Compétences linguistiques"><h2>Compétences linguistiques</h2></div>
-            <p> 
-                <ul>
-                    <li> <em> Anglais </em> : B1 </li> 
-                    <li> <em> Espagnol </em>: A2 </li>
-                </ul> 
-            </p>
+             <div id="right-panel">
 
+                <header>
+                    <h1> <span class="Audrey"> AUDREY</span> SERE </h1> <br/> <h2>Développeuse web Freelance</h2> 
+                    <hr>
+                </header>
+
+      
+                <section>
+                    <h2> <i class="fas fa-graduation-cap"></i> FORMATION </h2>
+                    <hr>
+                    <div class="body">
+                        <div class="icone"><i class="far fa-dot-circle"></i> </br>
+                            <i class="fas fa-circle"></i> </br>
+                            <i class="fas fa-circle"></i></br>
+                            <i class="fas fa-circle"></i> 
+                        </div>
+
+                        <div class="date">06/2014 <br/> 06/2016 </br> 05/2019 </br> 2020 </div>
+
+                        <div class="corpus">Obtention Baccalauréat STMG option Mercatique Mention bien </br>
+                            Obtention du BTS Assistant Manager </br>
+                            Obtention de la licence de psychologie parcours Neuropsychologie et développement </br>
+                            Préparation du diplôme de Web développeur Junior sur Openclasserooms                      
+                        </div>
+                    </div>
+
+                    <h2> <i class="fas fa-briefcase"></i> EXPERIENCE</h2>
+                    <hr>
+                    <div class="body">
+                        <div class="icone"><i class="far fa-dot-circle"></i> </br>
+                            <i class="fas fa-circle"></i> </br>
+                        </div>
+
+                        <div class="date">11/2019 - aujourd'hui <br/> 03/2018 - 09/2018 </div>
+
+                        <div class="corpus">Hôtesse de caisse Leclerc </br> Hôtesse de caisse Auchan </div>
+                    </div>   
+                    
+                    <footer>
+
+                        <h2> <i class="fas fa-pen"></i> RECOMMANDATIONS </h2>
+                        <hr>
+                        <div class="body"></div>
+                        <div class="name1"> RAISSA LEROUXEL </br> Chef de projet Marketing </br> Téléphone :0234567890 </br> 
+                        Email : name@email.com</div>
+                        <div class="name2"> MAXIME KIEMAN </br> Directeur, Mon Agence </br> Télephone : </br> Email : name@email.com</div>
+                    </footer>
+                   
+                    
+
+                </section>
+            </div>
         </div>
-     <p>
-         <h2> Mon Expérience </h2>
-
-         <ul>
-             <li> <strong> De 11/2019 à aujourd'hui : </strong>Hôtesse de caisse à Leclerc</li>
-             <li> <strong> De 03/2018 à 09/2018 : </strong> Hôtesse de caisse à Auchan </li>
-         </ul>
-
-         <h2> Mes Compétences </h2>
-         <ul> 
-             <li> Pack Office </li>
-             <li> Visual Studio Code </li>
-
-         </ul>
-
-         <h2> Ma Formation </h2>
-
-         <ul>
-             <li> <strong> 06/2014 : </strong> Obtention Baccalauréat STMG option Mercatique Mention bien</li>
-             <li> <strong>06/2016 : </strong> Obtention du BTS Assistant Manager</li>
-             <li> <strong> 05/2019 : </strong> Obtention de la licence de psychologie parcours Neuropsychologie et développement</li>
-             <li><strong> 2020 : </strong> Préparation du diplôme de Web développeur Junior sur Openclasserooms</li>
-         </ul>
-
-     </p>
-
-     <footer>
-
-        <!-- Placez ici le contenu du pied de page -->
-    </footer>
 
     </body>
 
