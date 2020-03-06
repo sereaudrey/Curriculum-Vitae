@@ -1,44 +1,6 @@
-body {
-    margin: 0;
-}
-
-
-h2 {
-
-    color: black;
-    font-family: "Trebuchet MS", Verdana, "Times New Roman";
-    font-size: 2rem;
-}
-
-ul{
-    color:black;
-    font-family: "Times New Roman", Verdana;
-    list-style-position: inside;
-}
-
-/*
-Commentaire qui n'apparait pas 
+/* Left panel 
 */
-#avatar {
-    border-radius :50%;
-}
-
-h1 {
-    font-family: "Trebuchet MS", verdana, "Times New Roman";
-    font-size: 5rem;
-    
-}
-
-strong {
-    font-style: italic;
-}
-
-header{
-    text-align: left;
-}
-
-#left-panel
-{
+#left-panel {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -52,19 +14,30 @@ header{
     padding-top: 5rem;
 }
 
-#loisirs{
+#avatar {
+    border-radius :50%;
+}
+
+#loisirs {
     color: rgb(75, 75, 75)
 }
-.catégories
-{
-    color : rgb(187, 201, 217);
+
+.catégories {
+    
     background-color: rgb(75, 75, 75);
     text-align: center;
     width: 100%;
 }
 
-#right-panel
-{
+.catégories h2 {
+    color : rgb(187, 201, 217);
+}
+
+/*
+Right panel
+*/
+
+#right-panel {
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -72,54 +45,19 @@ header{
     padding-left: 2rem;
 }
 
-.container
-{
-    display: flex;
-    flex-wrap: nowrap;
+.date {
+    width: 30%;  
 }
 
-.body 
-{
-    display: flex;
-    flex-wrap: nowrap;
-    padding-left: 1rem;
+.iconeBleu {
+    color: rgb(187, 201, 217)
 }
 
-.icone
-{
+.icone {
 width: 10%
 }
 
-.date
-{
-    width: 30%;
-}
-.far, .fas
-{
-    color: rgb(187, 201, 217)
-}
-
-.name1
-{
-    display: block;
-    flex-direction: column;
-    width: 50%;
-    float: left;
-}
-
-.name2
-{
-   display: flex;
-   flex-direction: column; 
-   width: 50%;
-   float: right
-}
-
-.Audrey{
-    color: rgb(187, 201, 217)
-}
-
-hr{
+hr {
     margin: 2%;
     height: 2px;
     margin-left: 0%;
@@ -128,6 +66,83 @@ hr{
     background-color:rgb(187, 201, 217);
     border: none;
 }
+
+/* Texte
+*/
+h1 {
+    font-family: "Trebuchet MS", verdana, "Times New Roman";
+    font-size: 5rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+h2 {
+    color: black;
+    font-family: "Trebuchet MS", Verdana, "Times New Roman";
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: "Trebuchet MS";
+    font-size: 1rem;
+}
+
+/*main
+*/
+body {
+    margin: 0;
+}
+
+header {
+    text-align: left;
+}
+
+.Audrey{
+    color: rgb(187, 201, 217)
+}
+
+.titrePoste {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.petitTrait {
+    width: 50px;
+}
+
+section {
+    text-align: justify;
+}
+
+.body {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 1rem;
+    ;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+
+.name1 {
+    display: block;
+    flex-direction: column;
+    width: 50%;
+    float: left;
+}
+
+.name2 {
+   display: flex;
+   flex-direction: column; 
+   width: 50%;
+   float: right
+}
+
+
 
 @media screen and (max-width: 768px)
 {
