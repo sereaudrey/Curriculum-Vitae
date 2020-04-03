@@ -1,3 +1,80 @@
+/* Texte
+*/
+h1 {
+    font-family: "Trebuchet MS", verdana, "Times New Roman";
+    font-size: 5rem;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+h2 {
+    color: black;
+    font-family: "Trebuchet MS", Verdana, "Times New Roman";
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: "Trebuchet MS";
+    font-size: 1rem;
+    font-style: normal;
+    text-align: justify;
+
+}
+
+h4 {
+    text-align: justify;
+    font-style: normal;
+    font-family: Trebuchet MS;
+}
+
+p {
+    text-align: justify;
+    font-style: normal;
+    font-family: Trebuchet MS;
+}
+
+/*main
+*/
+body {
+    margin: 0%;
+}
+
+header {
+    text-align: left;
+}
+
+.audrey{
+    color: rgb(187, 201, 217)
+}
+
+.titrePoste {
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+.petitTrait {
+    width: 6rem;
+    margin-top: 0%;
+}
+
+section {
+    text-align: justify;
+    margin-top: 10%;
+}
+
+.body {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 1rem;
+    ;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
 /* Left panel 
 */
 #left-panel {
@@ -5,32 +82,60 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: baseline;
-    height: 100%;
     align-items: baseline;
     background-color: rgb(187, 201, 217);
     font-family: "Trebuchet MS", verdana, "Times New Roman";
     width: 30% ;
-    padding: 12px;
     padding-top: 5rem;
+    position: relative;
 }
 
 #avatar {
     border-radius :50%;
+    text-align: center;
+}
+
+.photo {
+    text-align: center;
+    margin: 0 auto;
 }
 
 #loisirs {
-    color: rgb(75, 75, 75)
+    font-size: 3rem;
+    margin-top: 5%;
+    color: rgb(75, 75, 75)   
+       
 }
 
 .catégories {
     
-    background-color: rgb(75, 75, 75);
     text-align: center;
     width: 100%;
+    margin-top: 15%;
+    padding-left: 0%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    position: relative;
 }
 
 .catégories h2 {
+    background-color: rgb(75, 75, 75);
     color : rgb(187, 201, 217);
+    text-align: top;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#catégoriesLoisirs {
+    margin-top: 180%;
+}
+
+#left-panel p {
+    text-align: justify;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 /*
@@ -47,104 +152,66 @@ Right panel
 
 .date {
     width: 30%;  
+    padding-left: 0%;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.corpus {
+    padding-right: 0%;
 }
 
 .iconeBleu {
     color: rgb(187, 201, 217)
 }
 
+.pointBleu {
+    margin-right:none;
+    color: rgb(187, 201, 217)
+    
+}
 .icone {
 width: 10%
 }
 
 hr {
-    margin: 2%;
+    margin: 5%;
     height: 2px;
     margin-left: 0%;
-    margin-top: 0%;
+    margin-top: -2%;
     width: 80%;
     background-color:rgb(187, 201, 217);
     border: none;
 }
 
-/* Texte
-*/
-h1 {
-    font-family: "Trebuchet MS", verdana, "Times New Roman";
-    font-size: 5rem;
-    margin-bottom: 0px;
-    margin-top: 0px;
+td {
+    border: none;
+    padding-right: 2%;
+    padding-left: 1%;
 }
 
-h2 {
-    color: black;
-    font-family: "Trebuchet MS", Verdana, "Times New Roman";
-    font-size: 2rem;
+tr {
+    margin: 0%;
+    border:none;
 }
 
-h3 {
-    font-family: "Trebuchet MS";
-    font-size: 1rem;
+table {
+    border-collapse: collapse;
+}
+.name {
+    margin-left: -30%;
+    margin-bottom: 10%;
 }
 
-/*main
-*/
-body {
-    margin: 0;
-}
-
-header {
-    text-align: left;
-}
-
-.Audrey{
-    color: rgb(187, 201, 217)
-}
-
-.titrePoste {
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-
-.petitTrait {
-    width: 50px;
-}
-
-section {
-    text-align: justify;
-}
-
-.body {
+.recommandationsBody {
+    font-family: Trebuchet MS;
+    margin-top: -2%;
     display: flex;
-    flex-wrap: nowrap;
-    padding-left: 1rem;
-    ;
+    justify-content: space-around;
 }
 
-.container {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-
-
-.name1 {
-    display: block;
-    flex-direction: column;
-    width: 50%;
-    float: left;
-}
-
-.name2 {
-   display: flex;
-   flex-direction: column; 
-   width: 50%;
-   float: right
-}
-
-
-
-@media screen and (max-width: 768px)
+@media all and (max-width: 768px)
 {
     #left-panel, #right-panel 
     {
@@ -153,5 +220,38 @@ section {
     .container
     {
         flex-wrap: wrap;
+    }
+    #avatar, #left-panel p
+    { 
+        text-align: center;
+    }
+    #catégoriesLoisirs 
+    {
+        margin-top: 0%;
+    }
+    .body
+    { 
+        margin-right :10%;
+    }
+}
+
+@media all and (max-width : 400px)
+{
+    .recommandationsBody
+    {
+        display : block;
+        text-align : center;
+    }
+    .name
+    {
+        padding-bottom: 8%;
+    }
+    #catégoriesLoisirs 
+    {
+        margin-top: 0%;
+    }
+    .body
+    { 
+        margin-right :10%;
     }
 }
