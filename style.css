@@ -74,6 +74,10 @@ section {
     flex-wrap: nowrap;
 }
 
+footer {
+    margin-bottom: 30px;
+}
+
 
 /* Left panel 
 */
@@ -129,7 +133,8 @@ section {
 }
 
 #catégoriesLoisirs {
-    margin-top: 180%;
+    margin-top: auto;
+    margin-bottom: 30px;
 }
 
 #left-panel p {
@@ -253,5 +258,13 @@ table {
     .body
     { 
         margin-right :10%;
+    }
+     h2 
+    {
+        font-size: 1.5rem;
+    }
+    .titrePoste
+    {
+        font-size: 2rem;
     }
 }
